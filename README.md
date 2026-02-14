@@ -1,3 +1,15 @@
+## Bonus Task: In-Memory Caching
+To improve performance, I implemented a simple **In-Memory Cache** using the **Singleton** pattern.
+
+### How it works:
+1. **Caching:** When you request the menu (`getAllItems`), the program saves the result in memory (`HashMap`).
+2. **Performance:** The next time you request the menu, it comes from the **Cache** (very fast) instead of the **Database** (slower).
+3. **Invalidation:** If I add or delete a food item, the cache is automatically cleared. This ensures the user always sees the correct menu.
+
+### Classes:
+* **Implementation:** `src/main/java/com/restaurant/patterns/InMemoryCache.java` (Singleton).
+* **Usage:** Integrated into `RestaurantService.java`.
+
 # Restaurant REST API (Endterm Project)
 
 ## A. Project Overview
